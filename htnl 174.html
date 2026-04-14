@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <canvas id="myCanvas" width="600" height="400" style="border: 3px solid">
+    </canvas>
+    <script="text /javascript">
+        var ctx = document.getElementBy | d("myCanvas");
+        var myContext = stx.getContext("2d");
+
+        myContext.beginPath(); //패스 그리기 시작
+        myContext.moveTo(100, 20); // 패스 시작점 지정
+        myContext.lineTo(40, 120); //패스 이동점 지정
+        myContext.lineTo(160, 120);
+        myContext.fill();
+
+        myContext.moveTo(300, 20); //패스 시작점 지정
+        myContext.lineTo(200, 60); //패스 이동점 지정
+        myContext.lineTo(200, 120);
+        myContext.lineTo(400, 120);
+        myContext.lineTo(400, 60);
+        myContext.closePath();
+        myContext.stroke(); //패스 연결하기
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<html>
+
+<head>
+    <metacharset="utf-8" />
+    <script="text /javascript">
+        for (var i = 0; i < 5; i++) 
+        { 
+            document.write((i + 1) + "javascript" + "<br/>") 
+        } 
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
