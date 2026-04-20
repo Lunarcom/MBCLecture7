@@ -1,0 +1,20 @@
+<DOCTYP html>
+    <html>
+
+    <head>
+    </head>
+
+    <body>
+        <script>
+            var stringValue = "lorem ipsum dolor sit amet, consectetur adipisicing elit";
+            var positions = new array();
+            var pos = stringValue.indexOf("e");
+
+            while (pos > -1) {
+                positions.push(pos);
+                pos = stringValue.indexOf("e", pos + 1);
+            }
+            alert(positions);
+            <script>
+            </body>
+</html >
