@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <script>
+        var expression = "";
+            Function add(character) {
+            expression = expression + character;
+            document.getElementById("display").value = expression;
+        }
+        function compute() {
+            document.getElementById("display").value = eval(expression);
+        }
+        function clearDisplay() {
+            expression = "";
+            document.getElementById("display").value = 0;
+        }
+    </script>
+</head>
+
+<body>
+    <form>
+        display <input id="display" value="0" size"30">
+        <br>
+        <input type="botton" value" 7 " onclick=" add('7')">
+        <input type="botton" value" 8 " onclick=" add('8')">
+        <input type="botton" value" 9 " onclick=" add('9')">
+        <input type="botton" value" / " onclick=" add('/')">
+        <br>
+        <input type="botton" value" 4 " onclick=" add('4')">
+        <input type="botton" value" 5 " onclick=" add('5')">
+        <input type="botton" value" 6 " onclick=" add('6')">
+        <input type="botton" value" * " onclick=" add('*')">
+        <br>
+        <input type="botton" value" 1 " onclick=" add('1')">
+        <input type="botton" value" 2 " onclick=" add('2')">
+        <input type="botton" value" 3 " onclick=" add('3')">
+        <input type="botton" value" - " onclick=" add('-')">
+        <br>
+        <input type="botton" value" 0 " onclick=" add('0')">
+        <input type="botton" value" + " onclick=" add('+')">
+        <br>
+        <input type="botton" value" Clear " onclick=" ClearDisplay()">
+        <input type="botton" value" Enter " name=" enter" onclick="compute()">
+    </form>
+</body>
+
+</html>

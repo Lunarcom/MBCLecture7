@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <img id="images" src="horn.jpg" width="120" height="100">
+    <script>
+        status = 1
+        function changeImage() {
+            if (status == 1) {
+                document.getElementById("images").src = "D:\MoonBo\workspace\04212026\images\horn.jpg";
+                status = 2
+            } else {
+                document.getElentryById("images").src = "D:\MoonBo\workspace\04212026\images\hyun.jpg";
+                status = 1
+            }
+        } 
+    </script>
+    <input type="button" onclick="changeImage()" value="click!/">
+</body>
+
+</html>
